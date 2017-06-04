@@ -19,12 +19,16 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.Typeface;
 
+import com.guanqing.hao.kehan_dict.R;
 import com.guanqing.hao.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.Text;
 import com.google.android.gms.vision.text.TextBlock;
 
 import java.util.List;
+
+import io.reactivex.annotations.Nullable;
 
 /**
  * Graphic instance for rendering TextBlock position, size, and ID within an associated graphic
@@ -34,30 +38,31 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
 
     private int mId;
 
-    private static final int TEXT_COLOR = Color.WHITE;
-    private static final int ALPHA = 234;
-
     private static Paint sRectPaint;
     private static Paint sTextPaint;
     private final TextBlock mText;
+    private final String mTranslation;
 
-    OcrGraphic(GraphicOverlay overlay, TextBlock text) {
+    OcrGraphic(GraphicOverlay overlay, TextBlock text, boolean success, @Nullable String translation) {
         super(overlay);
-
         mText = text;
+        mTranslation = translation;
+        final int textColor = overlay.getResources().getColor(
+                success ? R.color.gb_notif : R.color.sensitive_warning_red);
+        final int alpha = success ? 255 : 128;
 
         if (sRectPaint == null) {
             sRectPaint = new Paint();
-            sRectPaint.setColor(TEXT_COLOR);
+            sRectPaint.setColor(Color.WHITE);
             sRectPaint.setStyle(Paint.Style.STROKE);
-            sTextPaint.setAlpha(ALPHA);
+            sTextPaint.setAlpha(alpha);
             sRectPaint.setStrokeWidth(4.0f);
         }
 
         if (sTextPaint == null) {
             sTextPaint = new Paint();
-            sTextPaint.setColor(TEXT_COLOR);
-            sTextPaint.setAlpha(ALPHA);
+            sTextPaint.setColor(Color.WHITE);
+            sTextPaint.setAlpha(alpha);
             sTextPaint.setTextSize(54.0f);
         }
         // Redraw the overlay, as this graphic has been added.
@@ -117,7 +122,8 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
         for(Text currentText : textComponents) {
             float left = translateX(currentText.getBoundingBox().left);
             float bottom = translateY(currentText.getBoundingBox().bottom);
-            canvas.drawText(currentText.getValue(), left, bottom, sTextPaint);
+            canvas.drawText(mTranslation != null ? mTranslation : currentText.getValue(),
+                    left, bottom, sTextPaint);
         }
     }
 }

@@ -14,6 +14,7 @@ import android.hardware.Camera;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.util.ArrayMap;
 import android.util.Log;
 import android.view.ScaleGestureDetector;
 import android.view.View;
@@ -46,16 +47,19 @@ public class CameraSourceHelper implements ScaleGestureDetector.OnScaleGestureLi
     private final Context mAppContext;
     private final CameraSourcePreview mPreview;
     private final GraphicOverlay<OcrGraphic> mGraphicOverlay;
+    private final Dict mDict;
     private CameraSource mCameraSource;
 
     public CameraSourceHelper(
             @NonNull Activity activity,
             @NonNull CameraSourcePreview preview,
-            @NonNull GraphicOverlay<OcrGraphic> graphicOverlay) {
+            @NonNull GraphicOverlay<OcrGraphic> graphicOverlay,
+            @NonNull Dict dict) {
         mActivity = activity;
         mAppContext = activity.getApplicationContext();
         mPreview = preview;
         mGraphicOverlay = graphicOverlay;
+        mDict = dict;
         init();
     }
 
@@ -73,9 +77,9 @@ public class CameraSourceHelper implements ScaleGestureDetector.OnScaleGestureLi
     }
 
     @SuppressLint("InlinedApi")
-    public void createCameraSource(boolean autoFocus, boolean useFlash) {
-        TextRecognizer textRecognizer = new TextRecognizer.Builder(mAppContext).build();
-        textRecognizer.setProcessor(new OcrDetectorProcessor(mGraphicOverlay));
+    private void createCameraSource(boolean autoFocus, boolean useFlash) {
+        final TextRecognizer textRecognizer = new TextRecognizer.Builder(mAppContext).build();
+        textRecognizer.setProcessor(new OcrDetectorProcessor(mGraphicOverlay, mDict));
 
         if (!textRecognizer.isOperational()) {
             Log.w(TAG, "Detector dependencies are not yet available.");
@@ -101,9 +105,7 @@ public class CameraSourceHelper implements ScaleGestureDetector.OnScaleGestureLi
                 .build();
     }
 
-    public void requestCameraPermission() {
-        Log.w(TAG, "Camera permission is not granted. Requesting permission");
-
+    private void requestCameraPermission() {
         final String[] permissions = new String[]{Manifest.permission.CAMERA};
 
         if (!ActivityCompat.shouldShowRequestPermissionRationale(mActivity,
@@ -126,13 +128,11 @@ public class CameraSourceHelper implements ScaleGestureDetector.OnScaleGestureLi
                 .show();
     }
 
-    public void onRequestPermissionsResult(int requestCode, @NonNull int[] grantResults) {
+    void onRequestPermissionsResult(int requestCode, @NonNull int[] grantResults) {
         if (requestCode != CameraSourceHelper.RC_HANDLE_CAMERA_PERM) {
-            Log.d(TAG, "Got unexpected permission result: " + requestCode);
             return;
         }
         if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Log.d(TAG, "Camera permission granted - initialize the camera source");
             // we have permission, so create the camerasource
             boolean autoFocus = mActivity.getIntent().getBooleanExtra(AUTO_FOCUS,false);
             boolean useFlash = mActivity.getIntent().getBooleanExtra(USE_FLASH, false);
@@ -140,23 +140,18 @@ public class CameraSourceHelper implements ScaleGestureDetector.OnScaleGestureLi
             return;
         }
 
-        Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
-                " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
-
-        DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                mActivity.finish();
-            }
-        };
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-        builder.setTitle("Multitracker sample")
+        new AlertDialog.Builder(mActivity).setTitle("Multitracker")
                 .setMessage(R.string.no_camera_permission)
-                .setPositiveButton(R.string.ok, listener)
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        mActivity.finish();
+                    }
+                })
                 .show();
     }
 
-    public void startCameraSource() throws SecurityException {
+    void startCameraSource() throws SecurityException {
         // check that the device has play services available.
         int code = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(mAppContext);
         if (code != ConnectionResult.SUCCESS) {

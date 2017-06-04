@@ -2,9 +2,5 @@
     {
         "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/raw/en_ch_dict.txt",
         "source": "/Users/ghao/Documents/GitHub/kehan_dict/app/src/main/res/raw/en_ch_dict.txt"
-    },
-    {
-        "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/raw/ch_en_dict.txt",
-        "source": "/Users/ghao/Documents/GitHub/kehan_dict/app/src/main/res/raw/ch_en_dict.txt"
     }
 ]

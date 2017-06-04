@@ -60,12 +60,12 @@
         "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
         "source": "/Users/ghao/.android/build-cache/5169932546c647fd3aa74d7f5a7ed8437ec4a3f1/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",

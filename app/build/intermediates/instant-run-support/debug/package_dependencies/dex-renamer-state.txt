@@ -1,4 +1,4 @@
-#Sun Jun 04 00:50:00 EDT 2017
+#Sun Jun 04 00:53:01 EDT 2017
 file.2=/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a32c8ef211ae061986f4c5a01ba862f7a633a8a2/classes.dex
 base.2=/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a32c8ef211ae061986f4c5a01ba862f7a633a8a2
 file.1=/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6352e7c984b4689d84cae4b517fae867ca9d744/classes.dex

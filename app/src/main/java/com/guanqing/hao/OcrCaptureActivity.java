@@ -18,11 +18,14 @@ package com.guanqing.hao;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
+import android.support.v4.util.ArrayMap;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.text.TextBlock;
@@ -32,6 +35,10 @@ import com.guanqing.hao.ui.camera.GraphicOverlay;
 
 import java.util.Locale;
 
+import io.reactivex.functions.Action;
+import io.reactivex.functions.Consumer;
+import io.reactivex.internal.observers.CallbackCompletableObserver;
+
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
  * rear facing camera. During detection overlay graphics are drawn to indicate the position,
@@ -40,8 +47,10 @@ import java.util.Locale;
 public final class OcrCaptureActivity extends AppCompatActivity {
     private static final String TAG = "OcrCaptureActivity";
 
+    private View mDimView;
     private GraphicOverlay<OcrGraphic> mGraphicOverlay;
     private CameraSourceHelper mCameraSourceHelper;
+    private Dict mDict;
 
     // Helper objects for detecting taps and pinches.
     private ScaleGestureDetector scaleGestureDetector;
@@ -57,10 +66,16 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
+        init();
+    }
 
+    private void init() {
+        mDimView = findViewById(R.id.dim_view);
         final CameraSourcePreview preview = (CameraSourcePreview) findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
-        mCameraSourceHelper = new CameraSourceHelper(this, preview, mGraphicOverlay);
+        mDict = new Dict(this);
+
+        mCameraSourceHelper = new CameraSourceHelper(this, preview, mGraphicOverlay, mDict);
 
         gestureDetector = new GestureDetector(this, new CaptureGestureListener());
         scaleGestureDetector = new ScaleGestureDetector(this,
@@ -72,10 +87,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                     @Override
                     public void onInit(final int status) {
                         if (status == TextToSpeech.SUCCESS) {
-                            Log.d("OnInitListener", "Text to speech engine started successfully.");
                             tts.setLanguage(Locale.US);
-                        } else {
-                            Log.d("OnInitListener", "Error starting the text to speech engine.");
                         }
                     }
                 };
@@ -92,6 +104,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        mDimView.setVisibility(View.GONE);
         mCameraSourceHelper.startCameraSource();
     }
 
@@ -127,16 +140,9 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         if (graphic != null) {
             text = graphic.getTextBlock();
             if (text != null && text.getValue() != null) {
-                Log.d(TAG, "text data is being spoken! " + text.getValue());
                 // Speak the string.
                 tts.speak(text.getValue(), TextToSpeech.QUEUE_ADD, null, "DEFAULT");
             }
-            else {
-                Log.d(TAG, "text data is null");
-            }
-        }
-        else {
-            Log.d(TAG,"no text detected");
         }
         return text != null;
     }
