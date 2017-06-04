@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

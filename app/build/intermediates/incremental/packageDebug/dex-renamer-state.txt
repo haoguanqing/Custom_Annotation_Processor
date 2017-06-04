@@ -1,0 +1,7 @@
+#Sat Jun 03 23:00:12 EDT 2017
+base.0=/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e3ae3ed049024fb6a09033aa3c1b07af118e3566
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7e105fac889897cd3fd0ffd07980dec40a59f12d/classes.dex
+base.1=/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7e105fac889897cd3fd0ffd07980dec40a59f12d
+file.0=/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e3ae3ed049024fb6a09033aa3c1b07af118e3566/classes.dex

@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/anim/abc_slide_out_bottom.xml"
+    }
+]
