@@ -23,9 +23,10 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+import android.widget.Toast;
 
-import com.google.android.gms.samples.vision.ocrreader.R;
 import com.google.android.gms.vision.text.TextBlock;
+import com.guanqing.hao.kehan_dict.R;
 import com.guanqing.hao.ui.camera.CameraSourcePreview;
 import com.guanqing.hao.ui.camera.GraphicOverlay;
 

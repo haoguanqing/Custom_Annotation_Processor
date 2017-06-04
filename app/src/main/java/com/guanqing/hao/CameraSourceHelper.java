@@ -21,8 +21,8 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
-import com.google.android.gms.samples.vision.ocrreader.R;
 import com.google.android.gms.vision.text.TextRecognizer;
+import com.guanqing.hao.kehan_dict.R;
 import com.guanqing.hao.ui.camera.CameraSource;
 import com.guanqing.hao.ui.camera.CameraSourcePreview;
 import com.guanqing.hao.ui.camera.GraphicOverlay;
