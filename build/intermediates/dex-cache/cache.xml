@@ -3,183 +3,48 @@
 
     <item
         is-multidex="true"
-        jar="/Users/ghao/hgq/kehan_dict/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f8062459a81dae2429687917e1c3aad15d82ceb6">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7e105fac889897cd3fd0ffd07980dec40a59f12d/classes.dex" />
+        sha1="beb7fa2c4d6183bdf9d0b4fac46f8d87e38f79e8">
+        <dex dex="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_69b6069f16b438d0de1535652502ce5f5b60cd63/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ghao/hgq/kehan_dict/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e3ae3ed049024fb6a09033aa3c1b07af118e3566/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_321f58019be5144e03eeff32674d696eda4a3505/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/25d9ce43eadb3535e04a410d4f61a78dd29b34d5/output/jars/classes.jar"
+        jar="/Users/ghao/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.0/2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1/rxjava-2.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_51bcddb5536f177c70ee6d8e9d71372991219ad1/classes.dex" />
+        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
+        <dex dex="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-2.1.0_5e79b2d94ac7100f1f5f0895b6ceb314bc88cd58/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/cf321477f714dba8ff2b2b9d27731508facec9aa/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e0010cfbb2c345ab375769aa3b22705761de5342/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/be0a141895f22bd5d3cb0f7832c29438e6eaecf4/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b757ba1e95b1f1338044d75bfe61fa24482ca7c6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/021522ec0cab1444b8918ea63d8a8747b2739fab/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90d0b3c3ef7c71f073276488c8439a4dd183ea3f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/71d53c47971a80dc31ff8c10b449efb48c668e4c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f4492f52a344d58d5d7d453dc92b865d38bbecf4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1c1addce8809f762475e01572d30d66fdf39f04a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/1934c231b39e195ce17a90cc509b7cc1a454408a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8e0fd3c25b94cfab1a8bc8c5b072fc5adf766ca3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/e37e523bce9c943c1b0502a4632a76999f6ff869/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e4af2f5ec58814aedf6924b0ae6b8b42542eb98f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/2cacee1ecf0f62a72ad15286a08eb8080ffb7287/output/jars/classes.jar"
+        jar="/Users/ghao/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="740c4226d6bec1adaaf5fee4b9178674b695f75a">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b9e0c15bfaf995b5e44a6d79b21bf8ab034982f/classes.dex" />
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/reactive-streams-1.0.0_a3a53b8668c8f229da4f9eda639dec726c17e609/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/1310ae682dca40a907224926acf5da15079e39c5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e34e8ec165f94436de39856310beae40a7da126a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/hgq/kehan_dict/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e3ae3ed049024fb6a09033aa3c1b07af118e3566/classes.dex" />
+        <dex dex="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_33ce841e4ef8dc38ca38939cec071cf3d64246c0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/22c09f38a218499fe22f59fa6092d24a736c6289/output/jars/classes.jar"
+        jar="/Users/ghao/.android/build-cache/8b5a0acb0679df947a020c4e8a1305592f1a745b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7ae8f5ec99ce3dffbadd3cd388d02a84ac56a77b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/25d9ce43eadb3535e04a410d4f61a78dd29b34d5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_51bcddb5536f177c70ee6d8e9d71372991219ad1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/abc056dcb329e742d847e37a186dae688aff0575/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6352e7c984b4689d84cae4b517fae867ca9d744/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/376e167550c68a38067158df1da00f763d1a0023/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_17c23ae7efd8669704d2678b02b555acf5d4fba6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/2a4749f03ba4d0d702f3c090b9ab965ce5c9eca3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd8eaf810c0b5c6a45fe27ffb094c04e0f5a2ce7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ghao/.android/build-cache/2cacee1ecf0f62a72ad15286a08eb8080ffb7287/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="740c4226d6bec1adaaf5fee4b9178674b695f75a">
-        <dex dex="/Users/ghao/hgq/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b9e0c15bfaf995b5e44a6d79b21bf8ab034982f/classes.dex" />
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9b3326edf38f7545a87738d0c6a43cd73b603fcd/classes.dex" />
     </item>
 
 </items>

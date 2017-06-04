@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/ghao/hgq/kehan_dict/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
-        "merged": "/Users/ghao/hgq/kehan/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "merged": "/Users/ghao/Documents/GitHub/kehan_dict/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/ghao/.android/build-cache/933181426d12318624d5c48c5c63e99d5dcd3b96/output/res/drawable-v23/abc_control_background_material.xml"
     }
 ]

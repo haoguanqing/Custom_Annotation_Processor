@@ -15,12 +15,16 @@
  */
 package com.guanqing.hao;
 
+import android.support.v4.util.ArrayMap;
 import android.util.Log;
 import android.util.SparseArray;
 
+import com.google.android.gms.common.api.Api;
 import com.guanqing.hao.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
+
+import java.util.Optional;
 
 /**
  * A very simple Processor which gets detected TextBlocks and adds them to the overlay
@@ -29,9 +33,11 @@ import com.google.android.gms.vision.text.TextBlock;
 public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
 
     private GraphicOverlay<OcrGraphic> mGraphicOverlay;
+    private Dict mDict;
 
-    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay) {
+    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay, Dict dict) {
         mGraphicOverlay = ocrGraphicOverlay;
+        mDict = dict;
     }
 
     /**
@@ -43,15 +49,18 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
      */
     @Override
     public void receiveDetections(Detector.Detections<TextBlock> detections) {
+        // TODO
         mGraphicOverlay.clear();
         SparseArray<TextBlock> items = detections.getDetectedItems();
         for (int i = 0; i < items.size(); ++i) {
             TextBlock item = items.valueAt(i);
-            if (item != null && item.getValue() != null) {
-                Log.d("OcrDetectorProcessor", "Text detected! " + item.getValue());
+            final String key = item.getValue().trim().toLowerCase();
+            final boolean success = mDict.get().containsKey(key);
+            if (success) {
+                final String translation = mDict.get().get(key);
+                final OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item, success, translation);
+                mGraphicOverlay.add(graphic);
             }
-            OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
-            mGraphicOverlay.add(graphic);
         }
     }
 
